@@ -10,7 +10,25 @@
             <li><a href="012ExternalCSS.html">External CSS</a> Click it for details</li>
             <li><a href="013InternalCSS.html">Internal CSS</a> Click it for details</li>
             <li><a href="014InlineCSS.html">Inline CSS</a> Click it for details</li>
-        </ul>
+        </ul><br>
+        <h2>Multiple Style Sheets</h2>
+        <p>
+            If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+        </p>
+        <a href="015E_I_style.html">internal style is defined after the link to the external style sheet</a>
+        <br>
+        <a href="016I_E_style.html">internal style is defined before the link to the external style sheet</a>
+        <br>
+        <h2>Cascading Order</h2>
+        <p>
+            What style will be used when there is more than one style specified for an HTML element?<br>
+            All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+            <br>1.Inline style (inside an HTML element)<br>
+            2. External and internal style sheets (in the head section)<br>
+            3. Browser default<br><br>
+            So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+        </p>
+        <a href="017cascadingOrder.html">Click here to see the example</a>
     </body>
-
 </html>
+
